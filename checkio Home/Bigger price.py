@@ -9,7 +9,7 @@ def bigger_price(limit: int, data: list) -> list:
 
 #shortened method
 
-return sorted(data, key=lambda x: x['price'], reverse=1)[:limit]
+return sorted(data, key=lambda x: x['price'], reverse=True)[:limit]
 
 if __name__ == '__main__':
     from pprint import pprint
