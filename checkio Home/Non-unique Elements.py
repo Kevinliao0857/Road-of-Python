@@ -19,6 +19,15 @@ def checkio(data: list) -> list:
 #Create new list with non-unique elements
 #Loop over original list
 
+# or method 2 with remove
+def checkio(data: list) -> list:
+
+    output = data[:]
+    for i in data:
+        if data.count(i) == 1:
+            output.remove(i)
+    return output
+
 
 if __name__ == "__main__":
     #These "asserts" using only for self-checking and not necessary for auto-testing
