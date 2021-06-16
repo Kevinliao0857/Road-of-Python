@@ -3,6 +3,9 @@ def popular_words(text: str, words: list) -> dict:
     wordSplit = text.lower().split()
     return {i: wordSplit.count(i) for i in words}
 
+# or
+
+
 
 if __name__ == '__main__':
     print("Example:")
