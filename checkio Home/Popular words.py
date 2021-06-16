@@ -5,6 +5,10 @@ def popular_words(text: str, words: list) -> dict:
 
 # or
 
+output = {}
+    for i in words:
+        output[i] = text.lower().split().count(i)
+    return output
 
 
 if __name__ == '__main__':
