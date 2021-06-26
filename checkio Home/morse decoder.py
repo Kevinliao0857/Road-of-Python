@@ -29,6 +29,8 @@ def morse_decoder(code):
         out_put.append(out)
     return ' '.join(out_put).capitalize()
 
+# or
+
 if __name__ == '__main__':
     print("Example:")
     print(morse_decoder('... --- ...'))
