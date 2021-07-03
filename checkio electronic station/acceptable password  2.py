@@ -24,7 +24,8 @@ def is_acceptable_password(password: str) -> bool:
 
 
 # other method
-
+def is_acceptable_password(password: str) -> bool:
+    return len(password) > 6 and any(i.isdigit() for i in password)
 
 if __name__ == '__main__':
     print("Example:")
