@@ -35,6 +35,7 @@ if __name__ == '__main__':
     print("Coding complete? Click 'Check' to earn cool rewards!")
 
 
+# acceptable password 3 section
 def is_acceptable_password(password: str) -> bool:
     if len(password) <= 6:
         return False
