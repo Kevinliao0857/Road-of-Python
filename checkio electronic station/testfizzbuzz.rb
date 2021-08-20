@@ -1,15 +1,16 @@
-num = 12345
+def fizzbuzz(n)
+   (1..n).each do |i| 
+        if num % 3 == 0 && num % 5 == 0
+            puts "#{num}. FIZZBUZZ!"
 
-if num % 3 == 0 && num % 5 == 0
-    puts "#{num}. FIZZBUZZ!"
+        elsif num % 3 == 0
+            puts "#{num}. FIZZ!"
 
-elsif num % 3 == 0
-    puts "#{num}. FIZZ!"
+        elsif num % 5 == 0
+            puts "#{num}. BUZZ!"
 
-elsif num % 5 == 0
-    puts "#{num}. BUZZ!"
-
-else
-    puts "#{num}."
-end
+        else
+            puts "#{num}."
+        end
+    end
 end
